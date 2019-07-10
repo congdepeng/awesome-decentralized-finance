@@ -1,196 +1,201 @@
-# Awesome Decentralized Finance  [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+# 超酷的去中心化金融列表  [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-A curated list of awesome decentralized finance projects, software, and resources.
+经过仔细挑选的非常酷的去中心化金融项目、软件和资源列表。
 
-## What is Decentralized Finance?
+## 什么是去中心化金融(Decentralized Finance, DeFi)?
 
-Decentralized finance (#defi) is the movement that leverages open source software and decentralized networks to transform traditional financial products into trustless and transparent protocols that operate without unnecessary intermediaries. One could envision decentralized finance impacting the financial world the same way that open source software has changed software products.
+去中心化金融 (#defi) 利用开源软件和去中心化网络将传统金融产品转变为无需信任(trustless)和透明的(transparent)协议, 避免了非必须的中间人参与操作(没有中间商赚差价)。
 
-## Contents
+可以想象去中心化金融对金融世界的影响, 将像开源软件改变了软件产品一样。
 
-- [Decentralized Exchange Protocols](#decentralized-exchange-protocols)
-- [Stablecoins](#stablecoins)
-- [Lending Protocols](#lending-protocols)
-- [Derivative Protocols/Prediction Markets](#derivative-protocols)
-- [Bundling Protocols](#bundling-protocols)
-- [Tokenization Protocols](#tokenization-protocols)
-- [Fund Protocols](#fund-protocols)
-- [KYC/AML/Identity](#kyc-aml-identity)
-- [Applications/Tools](#applications-tools)
-- [Analytics](#analytics)
-- [Misc](#misc)
-- [Community](#community)
+## 内容索引
+
+- [去中心化交易所协议](#decentralized-exchange-protocols)
+- [稳定币/Stablecoins](#stablecoins)
+- [借贷协议](#lending-protocols)
+- [金融衍生品/预测市场](#derivative-protocols)
+- [打包协议(e.g.一篮子货币)](#bundling-protocols)
+- [通证化协议](#tokenization-protocols)
+- [资金(资产)协议](#fund-protocols)
+- [KYC/反洗钱/身份识别](#kyc-aml-identity)
+- [应用/工具](#applications-tools)
+- [分析](#analytics)
+- [杂项](#misc)
+- [社区](#community)
 
 <a name="decentralized-exchange-protocols" />
 
-## Decentralized Exchange Protocols
+## 去中心化交易所协议
 
-- [BitShares](https://bitshares.org/technology/decentralized-asset-exchange) ([source code](https://github.com/bitshares), [white paper](https://www.bitshares.foundation/download/articles/BitSharesBlockchain.pdf)) - Decentralized exchange protocol based on the Graphene blockchain
+- [BitShares](https://bitshares.org/technology/decentralized-asset-exchange) ([代码](https://github.com/bitshares), [白皮书](https://www.bitshares.foundation/download/articles/BitSharesBlockchain.pdf)) - 基于石墨烯(Graphene)区块链
 - Bitcoin
-  - [Bisq](https://bisq.network) ([source code](https://github.com/bisq-network/bisq), [white paper](https://github.com/bisq-network/bisq-docs/blob/master/exchange/whitepaper.adoc)) - Protocol for peer-to-peer exchange of bitcoin
+  - [Bisq](https://bisq.network) ([代码](https://github.com/bisq-network/bisq), [白皮书](https://github.com/bisq-network/bisq-docs/blob/master/exchange/whitepaper.adoc)) - 支持点对点交易比特币的协议
 - Ethereum
-  - [0x](https://0x.org/) ([source code](https://github.com/0xProject), [white paper](https://0x.org/pdfs/0x_white_paper.pdf)) - Protocol for decentralized exchange of Ethereum assets using relayers, now on version 2
-  - [Bancor Protocol](https://about.bancor.network/protocol/) ([source code](https://github.com/bancorprotocol/contracts), [white paper](https://storage.googleapis.com/website-bancor/2018/04/01ba8253-bancor_protocol_whitepaper_en.pdf)) - Protocol for converting one token to another using "smart tokens"
-  - [DutchX](https://dutchx.readthedocs.io/en/latest/index.html) ([source code](https://github.com/gnosis/dx-contracts), [docs](https://github.com/gnosis/dx-docs/blob/master/source/_static/docs/DutchX_Documentation.pdf)) - Decentralized trading protocol for ERC-20s that uses the Dutch auction model to achieve fair prices
-  - [Hydro Protocol](https://hydroprotocol.io/) ([fork announcement](https://medium.com/hydro-protocol/why-we-are-forking-0x-97dc48ee0426), [source code](https://github.com/HydroProtocol), original white paper removed from website but is archived [here](https://whitepaper.io/document/170/hydro-protocol-whitepaper)) - A fork of 0x from DDEX with new order schema, a new matching engine, a different liquidity sharing model, and no ZRX token
-  - [Kyber](https://kyber.network) ([source code](https://github.com/kybernetwork), [white paper](https://files.kyber.network/Kyber_Protocol_22_April_v0.1.pdf)) - On-chain protocol for decentralized token swaps and for easy application integration
-  - [Loopring](https://loopring.org) ([source code](https://github.com/loopring), [white paper](https://loopring.org/resources.html)) - Protocol for building decentralized exchanges
-  - [Ren](https://renproject.io/) ([source code](https://github.com/renproject), [white paper](https://renproject.io/litepaper.pdf)) - Decentralized dark pool protocol for atomic swaps of digital assets formerly known as Republic
-  - [Swap / AirSwap's Protocol](https://airswap.io) ([source code](https://github.com/airswap), [white paper](https://swap.tech/whitepaper/)) - Protocol for peer-to-peer trading of ERC-20 tokens
-  - [Uniswap](https://uniswap.io) ([source code](https://github.com/Uniswap), [white paper](https://hackmd.io/C-DvwDSfSxuh-Gd4WKE_ig)) - "Public good"-oriented interface for ERC-20 token exchange with zero rent-extraction.
+  - [0x](https://0x.org/) ([代码](https://github.com/0xProject), [白皮书](https://0x.org/pdfs/0x_white_paper.pdf)) - 基于中继者(relayers)来提供以太坊资产的去中心化交易功能，当前为第二个版本
+  - [Bancor Protocol](https://about.bancor.network/protocol/) ([代码](https://github.com/bancorprotocol/contracts), [白皮书](https://storage.googleapis.com/website-bancor/2018/04/01ba8253-bancor_protocol_whitepaper_en.pdf)) - 使用smart tokens将不同token进行转换的协议，特点是提供更好的流动性
+  - [DutchX](https://dutchx.readthedocs.io/en/latest/index.html) ([代码](https://github.com/gnosis/dx-contracts), [docs](https://github.com/gnosis/dx-docs/blob/master/source/_static/docs/DutchX_Documentation.pdf)) - 使用荷兰式拍卖模式来提供更公平的价格的兼容ERC-20s的去中心化交易协议
+  - [Hydro Protocol](https://hydroprotocol.io/) ([fork announcement](https://medium.com/hydro-protocol/why-we-are-forking-0x-97dc48ee0426), [代码](https://github.com/HydroProtocol), 原始白皮书已从官网擅长，备份[在此](https://whitepaper.io/document/170/hydro-protocol-whitepaper)) - 从0x分叉的版本，使用新的排序方案、匹配引擎、流动性共享模型
+  - [Kyber](https://kyber.network) ([代码](https://github.com/kybernetwork), [白皮书](https://files.kyber.network/Kyber_Protocol_22_April_v0.1.pdf)) - 去中心化链上token交换协议，易于应用集成
+  - [Loopring](https://loopring.org) ([代码](https://github.com/loopring), [白皮书](https://loopring.org/resources.html)) - 构建去中心化交易所的协议（中国团队）
+  - [Ren](https://renproject.io/) ([代码](https://github.com/renproject), [白皮书](https://renproject.io/litepaper.pdf)) - 用于数字资产的原子交易的去中心化的暗池协议，之前叫做Republic
+  - [Swap / AirSwap's Protocol](https://airswap.io) ([代码](https://github.com/airswap), [白皮书](https://swap.tech/whitepaper/)) - 点对点交易ERC-20通证的协议
+  - [Uniswap](https://uniswap.io) ([代码](https://github.com/Uniswap), [白皮书](https://hackmd.io/C-DvwDSfSxuh-Gd4WKE_ig)) - 用于以太坊上自动token交换的协议，围绕易用性、gas利用效率、审查阻力和零租金提取而设计。
 
-- [Stellar](https://www.stellar.org/developers/guides/concepts/exchange.html) ([source code](https://github.com/stellar), [white paper](https://www.stellar.org/papers/stellar-consensus-protocol.pdf)) - Decentralized protocol for financial applications, including support for decentralized exchange
-  - [StellarX](https://www.stellarx.com/) (closed source) - A UI for the native Stellar DEX built by [Interstellar](https://interstellar.com/)
-  - [Interstellar.exchange](https://interstellar.exchange/) (closed source) - A UI for the native Stellar DEX built by [Fintech](https://www.fintech.cm/) (not related to the company Interstellar)
-  - [Stellarport](https://stellarport.io) (closed source) - A UI for the Stellar DEX
-  - [Stellarterm](https://stellarterm.com/) ([source code](https://github.com/stellarterm/stellarterm)) - An open-source UI for the Stellar Dex
+- [Stellar](https://www.stellar.org/developers/guides/concepts/exchange.html) ([代码](https://github.com/stellar), [白皮书](https://www.stellar.org/papers/stellar-consensus-protocol.pdf)) - 金融应用场景的去中心化协议，支持构建去中心化交易所
+  - [StellarX](https://www.stellarx.com/) (闭源) - 原生的Stellar交易所界面，开发者[Interstellar](https://interstellar.com/)
+  - [Interstellar.exchange](https://interstellar.exchange/) (闭源) - 又是一个原生的Stellar交易所界面，由[Fintech](https://www.fintech.cm/)开发 (和Interstellar公司没有关联)
+  - [Stellarport](https://stellarport.io) (闭源) - 一个Stellar交易所界面  - [Stellarterm](https://stellarterm.com/) ([代码](https://github.com/stellarterm/stellarterm)) - 一个开源的Stellar交易所界面
 
 <a name="stablecoins" />
 
-## Stablecoins
+## 稳定币/Stablecoins
 
-- IOU / Centralized
+- 打白条模式（IOU / 中心化的）
   - Bitcoin / Omni
-    - [Tether](https://tether.to) (closed source, [white paper](https://tether.to/wp-content/uploads/2016/06/TetherWhitePaper.pdf)) - Controversial USD-backed token connected to Bitfinex
+    - [Tether](https://tether.to) (闭源, [白皮书](https://tether.to/wp-content/uploads/2016/06/TetherWhitePaper.pdf)) - 基于美元质押的稳定币，但是对于是否1：1质押比较有争议，和Bitfinex交易所有较强的关联
   - Ethereum
-    - [CENTRE USDC](https://www.centre.io/usdc) ([source code](https://github.com/centrehq), [white paper](https://www.centre.io/pdfs/centre-whitepaper.pdf)) - ERC-20 stablecoin originally issued by [Circle](https://www.circle.com/en/usdc) and now embraced by [Coinbase](https://blog.coinbase.com/coinbase-and-circle-announce-the-launch-of-usdc-a-digital-dollar-2cd6548d237)
-    - [Gemini Dollar](https://gemini.com/dollar/) ([source code](https://github.com/gemini/dollar), [white paper](https://gemini.com/wp-content/themes/gemini/assets/img/dollar/gemini-dollar-whitepaper.pdf)) - ERC-20 stablecoin issued by Gemini
-    - [Paxos](https://www.paxos.com/pax/) ([source code](https://github.com/paxosglobal/pax-contracts), [white paper](https://www.paxos.com/wp-content/uploads/2019/02/PAX_Whitepaper.pdf)) - ERC-20 stablecoin issued by Paxos Trust Company
-    - [TrueUSD](https://www.trusttoken.com/trueusd/) ([source code](https://github.com/trusttoken/true-currencies)) - ERC-20 stablecoin with KYC/AML issued by TrustToken
-    - [DGX Token from Digix](https://digix.global/dgx) ([source code](https://github.com/DigixGlobal), [white paper](https://github.com/DigixGlobal/digix-press-kit/blob/master/digix-whitepaper.pdf)) - Token which represents 1 gram of gold on Ethereum
+    - [CENTRE USDC](https://www.centre.io/usdc) ([代码](https://github.com/centrehq), [白皮书](https://www.centre.io/pdfs/centre-whitepaper.pdf)) - ERC-20 格式的稳定币，原本是由[Circle](https://www.circle.com/en/usdc) 发行，现在由[Coinbase](https://blog.coinbase.com/coinbase-and-circle-announce-the-launch-of-usdc-a-digital-dollar-2cd6548d237)控制
+    - [Gemini Dollar](https://gemini.com/dollar/) ([代码](https://github.com/gemini/dollar), [白皮书](https://gemini.com/wp-content/themes/gemini/assets/img/dollar/gemini-dollar-whitepaper.pdf)) - ERC-20 格式的稳定币，由Gemini发行
+    - [Paxos](https://www.paxos.com/pax/) ([代码](https://github.com/paxosglobal/pax-contracts), [白皮书](https://www.paxos.com/wp-content/uploads/2019/02/PAX_Whitepaper.pdf)) - ERC-20 格式的稳定币，由Paxos Trust Company发行
+    - [TrueUSD](https://www.trusttoken.com/trueusd/) ([代码](https://github.com/trusttoken/true-currencies)) - ERC-20 格式的稳定币，支持KYC/AML，由TrustToken发行
+    - [DGX Token from Digix](https://digix.global/dgx) ([代码](https://github.com/DigixGlobal), [白皮书](https://github.com/DigixGlobal/digix-press-kit/blob/master/digix-whitepaper.pdf)) - 基于以太坊的和1克黄金挂钩的稳定币
   - Stellar
-    - [AnchorUSD](https://www.anchorusd.com/) (closed source) - KYC/AML compliant stellar-based token that promises deposits are held 1:1 in audited, US-based bank accounts
-    - [Stronghold](https://stronghold.co/stronghold-usd/) (closed source, [white paper](https://docsend.com/view/gg3p9ce)) - Stellar-based token that provides a KYC/AML compliant USD stablecoin
-    - [White Standard](https://thewhitecompanyus.com/white-standard/) ([source code](https://github.com/thewhitecompany/whitestandard#), [white paper](https://thewhitecompanyus.com/white-paper)) - Stellar-based tokens that provide stablecoins for a variety of currencies
-- Collateralized
-  - [Celo](https://celo.org) ([white paper](https://storage.googleapis.com/celo_whitepapers/Celo__A_Multi_Asset_Cryptographic_Protocol_for_Decentralized_Social_Payments.pdf)) - Over-collateralized stablecoin targeting the unbanked using its own distributed ledger
+    - [AnchorUSD](https://www.anchorusd.com/) (闭源) - KYC/AML合规的, 基于美国银行账户
+    - [Stronghold](https://stronghold.co/stronghold-usd/) (闭源, [白皮书](https://docsend.com/view/gg3p9ce)) - 基于Stellar的提供KYC/AMC合规的美元稳定币
+    - [White Standard](https://thewhitecompanyus.com/white-standard/) ([代码](https://github.com/thewhitecompany/whitestandard#), [白皮书](https://thewhitecompanyus.com/white-paper)) - 基于Stellar的提供多种货币映射的稳定币
+- 基于抵押的模式 (Collateralized)
+  - [Celo](https://celo.org) ([白皮书](https://storage.googleapis.com/celo_whitepapers/Celo__A_Multi_Asset_Cryptographic_Protocol_for_Decentralized_Social_Payments.pdf)) - Celo 拥有与法定货币(如美元)挂钩的稳定代币,以尽量减少波动性。流通中的代币由多元化、超额担保(overcollateralized)和公开审计的加密资产储备提供支持。
   - Ethereum
-    - [Dai Stablecoin from Maker](https://makerdao.com/dai) ([source code](https://github.com/makerdao), [white paper](https://makerdao.com/whitepaper/)) - Stablecoin based on smart contracts for creating collateralized debt positions
-    - [Synthetix](https://www.synthetix.io/) ([rebranding announcement](https://blog.synthetix.io/havven-is-transforming-into-synthetix/), [source code](https://github.com/Synthetixio/synthetix), [white paper](https://www.synthetix.io/uploads/synthetix_whitepaper.pdf)) - Decentralized stablecoin modeled on centralized closed loop payment networks formerly known as Havven
-     - [WBTC](https://www.wbtc.network) ([source code](https://github.com/WrappedBTC/bitcoin-token-smart-contracts), [white paper](https://www.wbtc.network/assets/wrapped-tokens-whitepaper.pdf)) - ERC-20 token backed 1:1 by Bitcoin
-- Algorithmic
+    - [Dai Stablecoin from Maker](https://makerdao.com/dai) ([代码](https://github.com/makerdao), [白皮书](https://makerdao.com/whitepaper/)) - 基于智能合约的用于创建债务抵押头寸的稳定币
+    - [Synthetix](https://www.synthetix.io/) ([rebranding announcement](https://blog.synthetix.io/havven-is-transforming-into-synthetix/), [代码](https://github.com/Synthetixio/synthetix), [白皮书](https://www.synthetix.io/uploads/synthetix_whitepaper.pdf)) - 以集中闭环支付网络为模型的去中心化稳定币,以前称为 Havven
+     - [WBTC](https://www.wbtc.network) ([代码](https://github.com/WrappedBTC/bitcoin-token-smart-contracts), [白皮书](https://www.wbtc.network/assets/wrapped-tokens-whitepaper.pdf)) - ERC-20 格式的1：1抵押比特币
+- 基于算法的模式(Algorithmic)
   - Ethereum
-    - [Ampleforth](https://www.ampleforth.org/) ([rebranding announcement](https://medium.com/ampleforth/fragments-to-ampleforth-thoughts-behind-the-name-change-e38bf95077b2), [source code](https://github.com/ampleforth), [white paper](https://www.ampleforth.org/paper/)) - Monetary policy-based stablecoin protocol formerly known as Fragments
-    - ~~[Basis](https://www.basis.io) ([white paper](https://www.basis.io/basis_whitepaper_en.pdf)) - Algorithmic stablecoin that "can be robustly pegged to arbitrary assets or baskets of goods"~~ - shut down due to inability to release tokens without securities classification in the US
-    - [Carbon](https://www.carbon.money/) ([white paper](https://www.carbon.money/static/media/explainer.964136d4.pdf)) - Stablecoin that will be composed of a basket of whitelisted tokens that is "functionally fiat-backed with the potential to whitelist an algorithmic stablecoin"
-    - [Terra](https://terra.money) ([source code](https://github.com/terra-project), [white paper](https://s3.ap-northeast-2.amazonaws.com/terra.money.home/static/Terra_White_paper.pdf?fab2019)) - Protocol that ensures price-stability by algorithmically expanding and contracting supply
+    - [Ampleforth](https://www.ampleforth.org/) ([rebranding announcement](https://medium.com/ampleforth/fragments-to-ampleforth-thoughts-behind-the-name-change-e38bf95077b2), [代码](https://github.com/ampleforth), [白皮书](https://www.ampleforth.org/paper/)) -基于货币政策的稳定币协议,以前称为Fragments
+    - [Carbon](https://www.carbon.money/) ([白皮书](https://www.carbon.money/static/media/explainer.964136d4.pdf)) - 组合一篮子白名单中的tokens来构建的稳定币
+    - [Terra](https://terra.money) ([代码](https://github.com/terra-project), [白皮书](https://s3.ap-northeast-2.amazonaws.com/terra.money.home/static/Terra_White_paper.pdf?fab2019)) - 通过算法扩展和收缩供应来确保价格稳定的协议。
 
 <a name="lending-protocols" />
 
-## Lending Protocols
+## 借贷协议 (Lending Protocols)
 
 - Ethereum
-  - [Compound](https://compound.finance) ([source code](https://github.com/compound-finance/), [white paper](https://compound.finance/documents/Compound.Whitepaper.v04-83de48b6622ddd665234b41076d04c8b.pdf?vsn=d)) - Protocol for algorithmic money markets
-  - [Dharma](https://www.dharma.io/) ([source code](https://github.com/dharmaprotocol) [white paper](https://dharmaprotocol.github.io/developer-docs/#/)) - Protocol for building lending products using tokenized debt
-  - [Ethlend](https://ethlend.io) ([source code](https://github.com/ETHLend), [white paper](https://github.com/ETHLend/Documentation/blob/master/ETHLendWhitePaper.md)) - Marketplace for peer-to-peer lending
-  - [Lendroid](https://www.lendroid.com) ([source code](https://github.com/lendroidproject), [white paper](https://lendroid.com/assets/whitepaper-margin-trading.pdf)) - Protocol for decentralized lending, margin trading, and short selling
-  - [Marble](https://marble.org) ([source code](https://github.com/marbleprotocol)) - "Flash lending" protocol for borrowing "Ether and ERC20 tokens to take advantage of arbitrage opportunities on Ethereum"
-  - [Ripio](https://ripiocredit.network/) ([source code](https://github.com/ripio/rcn-network), [white paper](https://ripiocredit.network/wp/RCN%20Whitepaper%20ENG.pdf)) - P2P global credit network protocol based on cosigned smart contracts
+  - [Compound](https://compound.finance) ([代码](https://github.com/compound-finance/), [白皮书](https://compound.finance/documents/Compound.Whitepaper.v04-83de48b6622ddd665234b41076d04c8b.pdf?vsn=d)) - 基于算法的货币市场协议（抵押代币来贷款，代币贬值可能被平仓）
+  - [Dharma](https://www.dharma.io/) ([代码](https://github.com/dharmaprotocol) [白皮书](https://dharmaprotocol.github.io/developer-docs/#/)) - 使用代币化债务构建贷款产品的协议
+  - [Ethlend](https://ethlend.io) ([代码](https://github.com/ETHLend), [白皮书](https://github.com/ETHLend/Documentation/blob/master/ETHLendWhitePaper.md)) - 点对点贷款市场
+  - [Lendroid](https://www.lendroid.com) ([代码](https://github.com/lendroidproject), [白皮书](https://lendroid.com/assets/whitepaper-margin-trading.pdf)) - 支持去中心化贷款、保证金交易和卖空的协议
+  - [Marble](https://marble.org) ([代码](https://github.com/marbleprotocol)) - 以太坊上的开放金融(Open Finance)
+  - [Ripio](https://ripiocredit.network/) ([代码](https://github.com/ripio/rcn-network), [白皮书](https://ripiocredit.network/wp/RCN%20Whitepaper%20ENG.pdf)) - 基于共同签名智能合约的 P2P 全球信贷网络协议
 
 <a name="derivative-protocols" />
 
-## Derivative Protocols/Prediction Markets
+## 金融衍生品/预测市场（Derivative Protocols/Prediction Markets）
 
 - Ethereum
-  - [Augur](https://www.augur.net) ([source code](https://github.com/AugurProject/augur), [white paper](https://www.augur.net/whitepaper.pdf)) - Prediction market protocol to enable anyone to "create and speculate on derivatives at a low cost for the first time"
-  - [bZx](https://b0x.network) ([source code](https://github.com/bZxNetwork), [white paper](https://b0x.network/pdfs/bZx_white_paper.pdf)) - 0x-integrated protocol for decentralized, peer-to-peer margin funding and trading
-   - [CDx](https://cdxproject.com) ([source code](https://github.com/cdx-project), [white paper](https://cdxproject.com/assets/resources/cdx-whitepaper.pdf)) - Protocol for tokenized credit default swaps
-   - [Daxia](https://www.daxia.us) ([source code](https://github.com/DecentralizedDerivatives), [white paper](https://github.com/DecentralizedDerivatives/DRCT_standard/blob/master/InDepthOverview.md)) - Tokenized derivatives protocol
-  - [dYdX](https://dydx.exchange) ([source code](https://github.com/dydxprotocol/protocol_v1), [white paper](https://whitepaper.dydx.exchange/)) - Margin-trading and options protocols
-  - [Gnosis](https://gnosis.io/) ([source code](https://github.com/gnosis), [white paper](https://gnosis.io/pdf/gnosis-whitepaper.pdf)) - Decentralized prediction market protocol
-  - [Market](https://marketprotocol.io) ([source code](https://github.com/MARKETProtocol), [white paper](https://marketprotocol.io/assets/MARKET_Protocol-Whitepaper.pdf)) - Protocol for structuring peer-to-peer agreements that settle in the future based on the price of a reference asset
-  - [UMA](https://umaproject.org) ([source code](https://github.com/umaprotocol), [white paper](https://umaproject.org/UMA-whitepaper.pdf)) - Protocol that allows any two counterparties to design and create their own financial contracts that are secured with economic incentives alone, making them self-enforcing and "universally accessible"
-  - [Veil](https://veil.co) ([source code](https://github.com/veilco)) - Peer-to-peer prediction market and derivatives platform built on top of Augur, 0x, and Ethereum
+  - [Augur](https://www.augur.net) ([代码](https://github.com/AugurProject/augur), [白皮书](https://www.augur.net/whitepaper.pdf)) - 预测市场协议,使任何人"首次以低成本创建和投机衍生品"
+  - [bZx](https://b0x.network) ([代码](https://github.com/bZxNetwork), [白皮书](https://b0x.network/pdfs/bZx_white_paper.pdf)) - 基于0x的的去中心化点对点保证金融资和交易协议
+   - [CDx](https://cdxproject.com) ([代码](https://github.com/cdx-project), [白皮书](https://cdxproject.com/assets/resources/cdx-whitepaper.pdf)) - 通证化的信用违约互换协议
+   - [Daxia](https://www.daxia.us) ([代码](https://github.com/DecentralizedDerivatives), [白皮书](https://github.com/DecentralizedDerivatives/DRCT_standard/blob/master/InDepthOverview.md)) - 通证化衍生工具协议
+  - [dYdX](https://dydx.exchange) ([代码](https://github.com/dydxprotocol/protocol_v1), [白皮书](https://whitepaper.dydx.exchange/)) - 保证金交易和期权协议
+  - [Gnosis](https://gnosis.io/) ([代码](https://github.com/gnosis), [白皮书](https://gnosis.io/pdf/gnosis-whitepaper.pdf)) -去中心化预测市场协议
+  - [Market](https://marketprotocol.io) ([代码](https://github.com/MARKETProtocol), [白皮书](https://marketprotocol.io/assets/MARKET_Protocol-Whitepaper.pdf)) -  构建基于参考资产价格做未来结算的对等协商的协议
+  - [UMA](https://umaproject.org) ([代码](https://github.com/umaprotocol), [白皮书](https://umaproject.org/UMA-whitepaper.pdf)) - 允许任何两个交易对手设计和创建自己的金融合同的协议,这些合同仅凭经济激励措施加以担保,使其自我执行并"全球可访问"
+  - [Veil](https://veil.co) ([代码](https://github.com/veilco)) - 基于Augur、0x 和以太坊之上的点对点预测市场和衍生品平台
 
 <a name="bundling-protocols" />
 
-## Bundling Protocols
+## 打包协议 (Bundling Protocols)
 
 - Ethereum
-  - [Basket Protocol](https://www.coinalpha.com/projects) ([source code](https://github.com/CoinAlpha/basket-protocol), [wiki](https://github.com/CoinAlpha/basket-protocol/wiki)) - Protocol for creating tokens that contain a portfolio of other tokens
-  - [BSKT](https://cryptofinlabs.github.io) ([source code](https://github.com/cryptofinlabs/bskt), [white paper](https://github.com/cryptofinlabs/bskt-whitepaper/blob/master/bskt-whitepaper-v1.0.0.pdf)) - Generic smart contract that creates decentralized token portfolios
-  - [Set](https://www.setprotocol.com/) ([source code](https://github.com/SetProtocol/set-protocol-contracts), [white paper](https://www.setprotocol.com/pdf/set_protocol_whitepaper.pdf)) - Protocol for creating, issuing, redeeming, and rebalancing fungible, collateralized baskets of tokenized assets
+  - [Basket Protocol](https://www.coinalpha.com/projects) ([代码](https://github.com/CoinAlpha/basket-protocol), [wiki](https://github.com/CoinAlpha/basket-protocol/wiki)) - 用于创建包含其他token组合的token协议
+  - [BSKT](https://cryptofinlabs.github.io) ([代码](https://github.com/cryptofinlabs/bskt), [白皮书](https://github.com/cryptofinlabs/bskt-whitepaper/blob/master/bskt-whitepaper-v1.0.0.pdf)) - 创建去中心化通证组合的通用智能合约
+  - [Set](https://www.setprotocol.com/) ([代码](https://github.com/SetProtocol/set-protocol-contracts), [白皮书](https://www.setprotocol.com/pdf/set_protocol_whitepaper.pdf)) - 用于创建、发行、赎回和再平衡可替代、抵押一篮子代币资产的协议
 
 <a name="fund-protocols" />
 
-## Fund Protocols
+## 资金(资产)协议 (Fund Protocols)
+
+(Fund 不太好精准翻译，这里假定数字资产也是一种资金或资产)
 
 - Ethereum
-  - [Fund Protocol](https://www.coinalpha.com/projects) ([source code](https://github.com/CoinAlpha/fund-protocol), [wiki](https://github.com/CoinAlpha/fund-protocol/wiki)) - Protocol for fund administration on the Ethereum blockchain
-  - [Melonport](https://melonport.com) ([source code](https://github.com/melonproject), [green paper](https://github.com/melonproject/paper/blob/master/melonprotocol.pdf)) - Protocol for digital asset management
+  - [Fund Protocol](https://www.coinalpha.com/projects) ([代码](https://github.com/CoinAlpha/fund-protocol), [wiki](https://github.com/CoinAlpha/fund-protocol/wiki)) - 以太坊上的资金管理协议
+  - [Melonport](https://melonport.com) ([代码](https://github.com/melonproject), [绿皮书](https://github.com/melonproject/paper/blob/master/melonprotocol.pdf)) - 数字资产管理协议
 
 <a name="tokenization-protocols" />
 
-## Tokenization Protocols
+## 通证化协议 (Tokenization Protocols)
+
 - Ethereum
-  - [ERC-1404](https://erc1404.org/) ([source code](https://github.com/simple-restricted-token/simple-restricted-token), [eip](https://github.com/ethereum/EIPs/issues/1404)) - An open standard for issuing tokens with transfer restrictions
-  - [Harbor/R-Token](https://harbor.com) ([source code](https://github.com/harborhq), [white paper](https://harbor.com/rtokenwhitepaper.pdf)) - Compliant protocol for standardizing crypto-securities issuance and trading
-  - [Polymath/ST-20](https://polymath.network) ([source code](https://github.com/PolymathNetwork), original white paper removed from website but is archived [here](https://whitepaper.io/document/57/polymath-whitepaper)) - Platform for tokenizing securities
-  - [Abacus](https://abacusfi.com/) ([soure code](https://github.com/abacusfi), [white paper](https://github.com/abacusfi/whitepaper/blob/master/whitepaper.pdf)) - Protocol for permissioned tokens
-- [Stellar](https://www.stellar.org/) ([source code](https://github.com/stellar/stellar-core), [docs](https://www.stellar.org/developers/guides/concepts/assets.html)) - Stellar has first-party support for issuing arbitrary tokens
+  - [ERC-1404](https://erc1404.org/) ([代码](https://github.com/simple-restricted-token/simple-restricted-token), [eip](https://github.com/ethereum/EIPs/issues/1404)) - 发行对转账有限制的通证的开放标准协议（限制是为了更合规，更容易应用到证券化通证中）
+  - [Harbor/R-Token](https://harbor.com) ([代码](https://github.com/harborhq), [白皮书](https://harbor.com/rtokenwhitepaper.pdf)) - 合规且标准化的加密证券发行和交易协议
+  - [Polymath/ST-20](https://polymath.network) ([代码](https://github.com/PolymathNetwork), 原始白皮书备份在[这里](https://whitepaper.io/document/57/polymath-whitepaper)) - 证券代币化平台
+  - [Abacus](https://abacusfi.com/) ([soure code](https://github.com/abacusfi), [白皮书](https://github.com/abacusfi/whitepaper/blob/master/whitepaper.pdf)) - 需要授权的通证协议
+- [Stellar](https://www.stellar.org/) ([代码](https://github.com/stellar/stellar-core), [docs](https://www.stellar.org/developers/guides/concepts/assets.html)) - Stellar 原生支持发行任意tokens
 
 <a name="kyc-aml-identity" />
 
-## KYC/AML/Identity
+## KYC/反洗钱/身份识别
 - Ethereum
-  - [Bloom](https://bloom.co) ([source code](https://github.com/hellobloom), [white paper](https://bloom.co/whitepaper.pdf)) - Protocol for identity & credit-scoring
-  - [Project Hydro](https://projecthydro.org/) ([source code](https://github.com/HydroBlockchain), [white paper](https://github.com/HydroBlockchain/hydro-docs)) - Decentralized ecosystem using cutting-edge cryptography to secure user accounts, identities, and transactions
-  - [SelfKey](https://selfkey.org) ([source code](https://github.com/SelfKeyFoundation/Identity-Wallet), [white paper](https://selfkey.org/selfkey-whitepaper)) - "Self-sovereign" identity management system that aims to integrate with various financial services
-  - [Wyre](https://www.sendwyre.com) ([source code](https://github.com/sendwyre), [Medium post](https://blog.sendwyre.com/announcing-the-wyre-sdk-on-ramps-off-ramps-in-under-10-lines-of-code-f2b127eccb5d)) - Compliance SDK that mints ERC-721 tokens to the addresses of verified users
+  - [Bloom](https://bloom.co) ([代码](https://github.com/hellobloom), [白皮书](https://bloom.co/whitepaper.pdf)) - 身份和信用评分协议
+  - [Project Hydro](https://projecthydro.org/) ([代码](https://github.com/HydroBlockchain), [白皮书](https://github.com/HydroBlockchain/hydro-docs)) - 使用前沿加密技术保护用户帐户、身份和交易的分布式生态系统
+  - [SelfKey](https://selfkey.org) ([代码](https://github.com/SelfKeyFoundation/Identity-Wallet), [白皮书](https://selfkey.org/selfkey-whitepaper)) - "Self-sovereign" 身份管理系统旨在与各种金融服务相集成
+  - [Wyre](https://www.sendwyre.com) ([代码](https://github.com/sendwyre), [Medium post](https://blog.sendwyre.com/announcing-the-wyre-sdk-on-ramps-off-ramps-in-under-10-lines-of-code-f2b127eccb5d)) - Wyre 主要业务重点在跨境支付领域，尤其是中国与美国之间的市场。Wyre 使用比特币、以太坊、莱特币及其他区块链上结算交易，作为两国企业之间的交易媒介。
 
 
 <a name="applications-tools" />
 
-## Applications/Tools
+## 应用和工具
 - Ethereum
-  - [AMP](https://amp.credit/) - DeFi Software Developer with [EasyCDP](https://easycdp.com/), [SilverWire](https://silverwire.io/), [MultiSupply](https://multi.supply/), and [StableWire](https://stablewire.com/)
-  - [Bloqboard](https://bloqboard.com) - Lending platform for collateralized loans originated, settled, serviced, and managed on Ethereum and powered by Compound and Dharma
-  - [Fetch](https://hellofetch.co) - Application that is both a decentralized exchange aggregator for price discovery and trading and a dashboard for discovering and managing decentralized loans and borrowings
-  - [InstaDApp](https://instadapp.io) - "Decentralized bank" interface built on top of MakerDAO by developers of [MakerScan](https://makerscan.io)
-  - [Multis](https://multis.co) ([white paper](https://multis.co/white-paper.html)) - Interface for multisig contracts positioned as "cryptobank for companies"
-  - [Settle](https://settle.finance) - Web interface that combines chat with different crypto tools (including portfolio tracking and integration with DeFi protocols) and an "app store" for developers
-  - [Zerion](https://zerion.io) ([source code](https://github.com/zeriontech)) - Interface to decentralized finance protocols positioned as "trustless banking"
+  - [AMP](https://amp.credit/) - DeFi 软件开发，特别是UX相关的，比如 [EasyCDP](https://easycdp.com/), [SilverWire](https://silverwire.io/), [MultiSupply](https://multi.supply/) 和 [StableWire](https://stablewire.com/)
+  - [Bloqboard](https://bloqboard.com) - 基于以太坊的贷款平台，用于抵押贷款的发起，清算和服务，由 Compound 和 Dharma 项目驱动
+  - [Fetch](https://hellofetch.co) - 既用于价格发现和交易的去中心化交换聚合器，也是用于发现和管理分散贷款和借款的Dashboard的应用程序
+  - [InstaDApp](https://instadapp.io) - "去中心化银行" 基于MakerDAO的用户接口，由[MakerScan](https://makerscan.io)开发
+  - [Multis](https://multis.co) ([白皮书](https://multis.co/white-paper.html)) - 多重签名合约的用户界面，定位是"企业的加密资产银行"
+  - [Settle](https://settle.finance) - 集成不同的加密工具（包括投资组合跟踪和DeFi协议集成）的Web界面，同时给开发者提供一个类似的“app store”
+  - [Zerion](https://zerion.io) ([代码](https://github.com/zeriontech)) - 去中心化金融协议，定位是"无需信任的银行"
 
 <a name="analytics" />
 
-## Analytics
+## 分析
 - Ethereum
-  - [0xTracker](https://0xtracker.com) - 0x protocol trade explorer and decentralised ERC-20 token price index
-  - [CuriousGiraffe](https://www.curiousgiraffe.io) - Analytics for [AirSwap](https://www.curiousgiraffe.io/airswap/), [Augur](https://www.curiousgiraffe.io/augur/), [Compound](https://www.curiousgiraffe.io/compound/), and [KyberSwap](https://www.curiousgiraffe.io/kyberswap/)
-  - [DEX Terminal](https://dexterminal.com) - Dashboard of decentralized finance activities, from exchange volume to lending/borrowing rates
+  - [0xTracker](https://0xtracker.com) - 0x protocol trade explorer and decentralised ERC-20 token price index 0x协议交易浏览器，去中心化的ERC-20 token 价格指数
+  - [CuriousGiraffe](https://www.curiousgiraffe.io) - 用于分析 [AirSwap](https://www.curiousgiraffe.io/airswap/), [Augur](https://www.curiousgiraffe.io/augur/), [Compound](https://www.curiousgiraffe.io/compound/), 和 [KyberSwap](https://www.curiousgiraffe.io/kyberswap/)
+  - [DEX Terminal](https://dexterminal.com) - 分布式金融活动的仪表板，包含交换量以及贷款/借款利率
   - [ETH in DeFi](https://mikemcdonald.github.io/eth-defi/) - Chart of the amount of ETH locked in DeFi products (Maker, Compound, Augur, dYdX, Uniswap)
-  - [Loanscan](https://loanscan.io/) - Explorer for Ethereum loans
-  - [MakerScan](https://makerscan.io) - Explorer for MakerDao
-  - [MKR Tools](https://mkr.tools/) - Explorer for MakerDao
-  - [Uniswap ETH Liquidity](https://mikemcdonald.github.io/uniswap/eth-token-liquidity) - Chart of Uniswap's ETH liquidity by token
-  - [Predictions.Global](https://predictions.global/) - Dashboard with prediction markets from Augur
-- [DeFI Pulse](https://defipulse.com/) - Dashboard with info about locked amount in USD
-- [Stablecoin Index](https://stablecoinindex.com/) - Chart of prices biggest stablecoins
-- [Stable Report](https://stable.report/) - Weekly reports about stablecoins and list of most stablecoins
+  - [Loanscan](https://loanscan.io/) - Ethereum 贷款浏览器
+  - [MakerScan](https://makerscan.io) - MakerDao 浏览器
+  - [MKR Tools](https://mkr.tools/) - MakerDao 浏览器
+  - [Uniswap ETH Liquidity](https://mikemcdonald.github.io/uniswap/eth-token-liquidity) - Uniswap的ETH流动性图表，按Token分类
+  - [Predictions.Global](https://predictions.global/) - Augur 预测市场的仪表板
+- [DeFI Pulse](https://defipulse.com/) - 关于锁定的美元金额信息的仪表板
+- [Stablecoin Index](https://stablecoinindex.com/) - 体量比较大的稳定币图表
+- [Stable Report](https://stable.report/) - 关于稳定币和常见稳定币列表的每周报道
 
 <a name="misc" />
 
-## Misc
+## 杂项
 - Ethereum
-  - [8x Protocol](https://8xprotocol.com) ([source code](https://github.com/8xprotocol), [white paper](https://rawcdn.githack.com/8xprotocol/whitepaper/master/latest.pdf)) - Protocol for decentralized subscription payment
-  - [AZTEC Protocol](https://www.aztecprotocol.com) ([source code](https://github.com/AztecProtocol/AZTEC), [white paper](https://github.com/AztecProtocol/AZTEC/blob/master/AZTEC.pdf)) - Privacy-enabling protocol for confidential transactions on the Ethereum network
-  - [Centrifuge](https://www.centrifuge.io) ([source code](https://github.com/centrifuge), [white paper](https://centrifuge.io/centrifuge_os_white_paper.pdf)) - Platform for financial supply chain, including exchange of invoices, purchase orders, etc.
-  - [Groundhog](https://groundhog.network) - "End-to-end" platform for decentralized recurring subscription payments
+  - [8x Protocol](https://8xprotocol.com) ([代码](https://github.com/8xprotocol), [白皮书](https://rawcdn.githack.com/8xprotocol/whitepaper/master/latest.pdf)) - 去中心化的订阅支付协议
+  - [AZTEC Protocol](https://www.aztecprotocol.com) ([代码](https://github.com/AztecProtocol/AZTEC), [白皮书](https://github.com/AztecProtocol/AZTEC/blob/master/AZTEC.pdf)) - 支持隐私保护的以太坊网络上的保密交易协议
+  - [Centrifuge](https://www.centrifuge.io) ([代码](https://github.com/centrifuge), [白皮书](https://centrifuge.io/centrifuge_os_white_paper.pdf)) - 供应链金融平台, 包括发票、采购订单等的交易。
+  - [Groundhog](https://groundhog.network) - 端到端的去中心化定期订阅支付平台
 
 <a name="community" />
 
-## Community
+## 社区
 * [DeFi Reddit](https://www.reddit.com/r/defi/)
 * [DeFi Telegram](https://t.me/de_fi)
+* ++ [ATA DeFi 研究院](https://www.atatech.org/groups/2828)
 
 <a name="contributions" />
 
-## Contributions
+## 参与和贡献
 
-Your contributions are always welcome!
+翻译自 [awesome-decentralized-finance](https://github.com/congdepeng/awesome-decentralized-finance)
 
-If you want to contribute to this list (please do), send me a pull request or contact me [@edwin](https://twitter.com/edwin).
+参与方式详见原始 git repository。
 
-## License
 
-[![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+## 后记
+
+- 通篇用的比较多的单词是Protocol，所谓协议就是理论上不绑定具体实现方案，项目发起方基于一个理念创建了项目并做了参考实现，只要符合这个协议，不会将你绑定在具体实现上。
